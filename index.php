@@ -33,15 +33,9 @@
 </head>
     
 <body class="">
-<<<<<<< HEAD
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
-        <div class="container">
-            <a class="navbar-brand" href="/">Fabric</a>
-=======
 <nav class="navbar navbar-expand-sm navbar-dark bg-cutom mb-3">
         <div class="container">
             <a class="navbar-brand top-logo" href="/">Fabric</a>
->>>>>>> fixbyrajat/dropfunction
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,21 +60,6 @@
                 
                 <div class="col-sm-6" >
 					<div class="row">
-<<<<<<< HEAD
-               		 <!-- <h5 class="text-center">Tester</h5>                 -->
-                    	<div class="form-group col-sm-12">
-                            <div class="card p-4 shadow-sm h-100">
-							
-							<label for="input file">Upload Image File:</label>
-                            <div class="custom-file">
-
-                                <input type="file" class="custom-file-input file2" data-image-selector=".image2"  id="customFile" name="filename" value="sample.fxdr">
-                                <label class="custom-file-label" for="customFile">Upload Image</label>
-                            </div>
-						<div class="col-sm-6 col-6 mt-5 d-none" id="uploaded_img">
-							<h6>Crop Image</h6>							
-							<img class="image2 hidden img-fluid" id="croppr" alt="Meme Image will shown here" />
-=======
                		 <!-- <h5 class="text-center">Tester</h5>-->
                     	<div class="form-group col-sm-12">
                             <div class="card p-4 shadow-sm set-card">
@@ -94,7 +73,6 @@
 						<div class="col-sm-6 col-6 d-none upload-image" id="uploaded_img">
 							<h6>Crop Image</h6>							
 							<img class="image2 hidden img-fluid croppr" id="croppr" alt="Image will shown here" />
->>>>>>> fixbyrajat/dropfunction
 						</div>
 							</div>
 
@@ -115,16 +93,6 @@
 				<div class="row">
 				
 				<div class="form-group col-sm-12">
-<<<<<<< HEAD
-					<div class="card shadow-sm p-4">
-					
-					<label for="input file">Upload Background File:</label>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input file3" data-image-selector=".background-img"  id="customFile1" name="filename" value="sample.fxdr">
-							<label class="custom-file-label" for="customFile">Upload Image</label>
-						</div>
-					<img class="background-img d-block mx-auto mt-4 img-fluid" alt="">
-=======
 					<div class="card shadow-sm p-4 set-card">
 					
 					<label for="input file"></label>
@@ -137,7 +105,6 @@
 						<img class="background-img d-block mx-auto  img-fluid "   alt="">
 						</div>
 					
->>>>>>> fixbyrajat/dropfunction
 					</div>	
 				
 				</div>
@@ -146,32 +113,18 @@
 			</div>
 			</div>    
     
-<<<<<<< HEAD
-            <div class="col-sm-12">
-			<button id="merger_fabric" class="btn btn-primary btn-lg">Merge</button>
-=======
             <div class="col-sm-12 text-center">
 			<button id="merger_fabric" class="btn btn-custom btn-lg">MERGE IMAGES</button>
->>>>>>> fixbyrajat/dropfunction
 			<!-- <div style="position:relative;">
 				<canvas id="c1" style="width:500px; height:100px;"></canvas>
 			</div> -->
 			</div>
-<<<<<<< HEAD
-			<div class="col-sm-12">
-			
-			<h2 class="result3 d-none text-center">Results</h2>
-			</div>
-			<div class="col-sm-12">
-				<div class="card shadow-sm p-4 d-none" id="result4">
-=======
 			<div class="col-sm-2 result-set">
 			
 			<h2 class="result3 d-none result-h6">RESULTS</h2>
 			</div>
 			<div class="col-sm-12">
 				<div class="card shadow p-4 d-none set-card" id="result4">
->>>>>>> fixbyrajat/dropfunction
 				<div class="row">
 				
 					<div class=" col-sm-6 result d-none mt-5" >
@@ -182,13 +135,8 @@
 					</div>
 					<div class="col-sm-6 result1 d-none mt-5">
 						<canvas id="final_image" class="d-block mx-auto" width="500" height="500"></canvas>
-<<<<<<< HEAD
-						<h4 class="text-center">Final Result</h4>
-						<button id="download" class="btn btn-success mt-2 d-block mx-auto">Download</button>			
-=======
 						<h4 class="text-center result-h4">Final Result</h4>
 						<button id="download" class="btn btn-custom mt-2 d-block mx-auto">Download</button>			
->>>>>>> fixbyrajat/dropfunction
 					</div>
 
 				</div>
@@ -211,17 +159,10 @@
 	<!-- <button id="download1">Download1</button> -->
 	<!-- <img src="" id="lala" alt=""> -->
     </main>
-<<<<<<< HEAD
-	<footer class="bg-primary py-3 mt-3">
-		<div class="container">
-			<div class="row">
-			<div class="col-sm-6 "><p class="text-white text-md-left text-center font-weight-bold">TEST@2020 All rights reserved</p></div>
-=======
 	<footer class="bg-cutom  py-3 mt-3 ">
 		<div class="container">
 			<div class="row">
 			<div class="col-sm-6 "><p class="text-white text-md-left text-center font-weight-bold">CSI@2020 All rights reserved</p></div>
->>>>>>> fixbyrajat/dropfunction
 			<div class="col-sm-6 "> <p class="text-md-right text-center text-white font-weight-bold">TEST</p></div>
 			</div>
 		</div>
