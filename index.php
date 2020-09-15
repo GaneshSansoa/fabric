@@ -100,9 +100,9 @@
 							<input type="file" class="custom-file-input file3 input-set" data-image-selector=".background-img"  id="customFile1" name="filename" value="sample.fxdr">
 							<label class="custom-file-label upload-set hover" for="customFile">DROP OR UPLOAD BACKGROUND IMAGE HERE</label>
 						</div>
-						<div class=" col-sm-12 col-12 upload-image-2 " >
+						<div class=" col-sm-12 col-12 upload-image-2 d-none mt-5 " >
 							
-						<img class="background-img d-block mx-auto  img-fluid "   alt="">
+						<img class="background-img d-block mx-auto img-fluid"   alt="">
 						</div>
 					
 					</div>	
@@ -253,6 +253,7 @@
 	  }
 	});
 	function backgroundImageIsLoaded(e, imageSelector){
+		$(".upload-image-2").removeClass("d-none");
 		$(imageSelector).attr('src', e.target.result);
 		background_img_src = e.target.result;
 	  $(imageSelector).removeClass('hidden');
