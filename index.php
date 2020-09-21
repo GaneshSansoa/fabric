@@ -308,24 +308,6 @@ canvas.on("after:render", function(){
   }		
 })
 	function mergeFabric(){
-		// data = cropInstance.getValue();
-		// console.log(cropInstance.toDataURL('image/jpeg'));
-		// console.log(data);
-		// console.log(img_src);
-	//   var canvas = document.getElementById('canvas2'),
-	// 	ctx = canvas.getContext('2d'),
-	// 	imageObj1 = new Image(),
-	// 	imageObj2 = new Image();
-	// // // 	imageObj3 = new Image();
-
-	//   imageObj1.src = $('.background-img').attr('src');
-	// // //   console.log(imageObj1);
-	//   imageObj1.onload = function() {
-	// 	ctx.globalAlpha = 1;
-	// 	ctx.drawImage(imageObj1, 0, 0, 600, 600);
-	// 	// imageObj2.src = img_src;
-	// 	// imageObj2.onload = function() {
-	// 	}
 			cropped_url = cropInstance.getCroppedCanvas();
 			fabric.Image.fromURL(cropped_url.toDataURL(), function(oImg) {
 				c1.add(oImg);
@@ -334,34 +316,6 @@ canvas.on("after:render", function(){
 			fabric.Image.fromURL($('.background-img').attr('src'), function(oImg) {
 				c1.add(oImg);
 			});
-			
-	// 	  ctx.globalAlpha = 1;
-		 
-	// 	  ctx.drawImage(imageObj2,data.x,data.y,data.width,data.height, 0, 0, 200, 200);
-		  		//var img = canvas.toDataURL('image/jpeg');
-	// 			  $('.merged-image').attr('src', img);
-	// 			  $('.merged-image').removeClass('hidden');	
-	// 			  $("#generated_img").removeClass('d-none');
-				//   $('.merged-image').attr('src', img);
-				//   $('.merged-image').removeClass('hidden');	
-				//   $("#generated_img").removeClass('d-none');
-	// 		// imageObj3.src = $('.image3').attr('src');	
-	// 		// 	imageObj3.onload = function() {
-	// 			// ctx.globalAlpha = 0.5;
-	// 			// ctx.drawImage(imageObj3, 220, 220, 40, 40);
-	// 			// }
-			
-			
-
-	// 	}
-			// var backImgCanvas = document.getElementById("back_img");
-			// btcx = backImgCanvas.getContext("2d");
-			// backImgObj = new Image();
-			// backImgObj.src = background_img_src;
-			// backImgObj.onload = function(){
-			// 	btcx.globalAlpha = 1;
-			// 	btcx.drawImage(backImgObj, 0,0,500,500);
-			// };
 			if(img_src != "" && background_img_src != ""){
 			
 			$(".result").removeClass("d-none");
@@ -381,60 +335,19 @@ canvas.on("after:render", function(){
 			});
 			}	
 			else{
-				alert("dada");
-//				$("#merger_fabric").insertAfter("<div class='alert alert-danger'>Please Upload Both Images</div>");
+				$("#merger_fabric").insertAfter("<div class='alert alert-danger'>Please Upload Both Images</div>");
 			}
 	  };
-	//   var imgg = $("#hehe");
-	//   imgg.attr("src", img_src);
-	//   imgg.width = "100";
-	//   imgg.height = "200";
 
-			//canvas.add(imgInstance);
-	
-		
-	// function imageIsLoaded(e, imageSelector) {
-		
-	//   $(imageSelector).attr('src', e.target.result);
-	//   img_src = e.target.result;
-	//   $(imageSelector).removeClass('hidden');
-	//   $("#uploaded_img").removeClass('d-none');
-	//   const cropperImage = document.getElementById('croppr');
-	// 	cropInstance = new Cropper(cropperImage, {
-	// 		  // ...options
-	// });
 	
 
 	$("#download1").click(function(){
 
 	})
 	$('#download').click(function() {
-			// console.log($("#c1").toDataURL());
-	 		// download(c.toDataURL(), "test.jpg", "image/jpeg");
-			// console.log(coordinates);
-			//  $("#lala").attr("src", cropped_url.toDataURL());
-			// console.log(cropped_url.toDataURL());
-			//  var finalCanvas = document.getElementById("final_image");
-			//  ftx = finalCanvas.getContext("2d");
-			//  backFinalImg = new Image();
-			//  aboveFinalImg = new Image();
-			//  backFinalImg.src = background_img_src;
-			//  backFinalImg.onload = function(){
-			// 	ftx.globalAlpha = 1;
-			// 	ftx.drawImage(backFinalImg, 0, 0, 500, 500);
-			// 	aboveFinalImg.src = cropped_url.toDataURL();
-			// 	aboveFinalImg.onload = function(){
-			// 		// ftx.globalAlpha = 1;
-			// 		ftx.drawImage(aboveFinalImg, coordinates.left, coordinates.top, coordinates.width, coordinates.height);
-			// 	}
-			//  }
-			//  var final_url = finalCanvas.toDataURL();
 			 console.log(finalCanvas.toDataURL());
-	 		download(finalCanvas.toDataURL(),"fabric.png","image/png");
-	// );
-	// setTimeout(function(){
-	// 	window.location.reload();
-	// },2000)
+	 		 download(finalCanvas.toDataURL(),"fabric.png","image/png");
+			//  window.open(canvas.toDataURL('png'))
 		  });
 	
 	
