@@ -499,16 +499,17 @@ function addDeleteBtn(x, y){
 			 backFinalImg = new Image();
 			 aboveFinalImg = new Image();
 			 backFinalImg.src = background_img_src;
+			 console.log(backFinalImg);
 			 backFinalImg.onload = function(){
 				ftx.globalAlpha = 1;
 				ftx.drawImage(backFinalImg, 0, 0, 500, 500);
-				ftx.save();
+				// ftx.save();
 				aboveFinalImg.src = canvas.toDataURL();
 
 				aboveFinalImg.onload = function(){
 					// ftx.globalAlpha = 1;
 					ftx.drawImage(aboveFinalImg, 0, 0, 500, 500);
-					ftx.restore();
+					// ftx.restore();
 				}
 			 }
 			 //console.log(finalCanvas.toDataURL());
