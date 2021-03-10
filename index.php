@@ -201,8 +201,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 	<script src="js/fontObserver.js"></script>
     <script>
-   
-
 	var data = {};
 	var img_src = "";
 	var cropped_url = "";
